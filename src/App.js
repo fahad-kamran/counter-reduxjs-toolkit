@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+// ***********************
+// Author : Fahad Kamran
+// Date : 18-APR-2023
+// Comment : Counter App with React, redux & reduxjs/toolkit
+// ***********************
+
+import React, { Fragment } from 'react';
+// global css file
 import './App.css';
+import Display from './Components/display';
+import Increament from './Components/increament';
+import Decreament from './Components/decreament';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Display />
+      <div className='d-flex justify-content-center'>
+        <Increament />
+        <Decreament />
+      </div>
+    </Fragment>
+  )
 }
 
 export default App;
